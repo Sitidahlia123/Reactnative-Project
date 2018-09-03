@@ -12,6 +12,7 @@ import {
   View,
   Image
 } from 'react-native';
+import Judul from'./components/judul';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -25,6 +26,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+      <Judul/>
       <Image 
         style={{width: 200, height: 250}}
         source={require('./foto.jpg')} />
@@ -41,7 +43,7 @@ export default class App extends Component<Props> {
           No Absen : 36
         </Text>
       </View>
-    )
+    );
   }
 }
 
