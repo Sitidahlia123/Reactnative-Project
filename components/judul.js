@@ -4,7 +4,8 @@ import {Text} from 'react-native';
 class Judul extends Component{
 	render(){
 		return (
-			<Text style = {edit.Judul}>Biodata</Text>
+			<Text style = {edit.Judul}>
+			{ this.props.judul }</Text>
 			);
 	}
 }

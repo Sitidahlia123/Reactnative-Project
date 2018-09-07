@@ -22,11 +22,13 @@ const instructions = Platform.select({
 });
 
 type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component<Props>{
   render() {
     return (
       <View style={styles.container}>
-      <Judul/>
+      <Judul judul="Login"/>
+      <Judul judul="biodata"/>
+      <Judul judul="Saya"/>
       <Image 
         style={{width: 200, height: 250}}
         source={require('./foto.jpg')} />
